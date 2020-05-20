@@ -1,0 +1,9 @@
+package com.DMAT.microservice.coursequestionservice.modal;
+
+public class Question {
+	
+	private int qid;
+	private String question;
+	private int sectionId;
+
+}

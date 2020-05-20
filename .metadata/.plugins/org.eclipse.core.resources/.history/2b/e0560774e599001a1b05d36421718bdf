@@ -1,0 +1,5 @@
+package com.DMAT.microservice.mainservice.modal;
+
+public class QuestionArray {
+
+}

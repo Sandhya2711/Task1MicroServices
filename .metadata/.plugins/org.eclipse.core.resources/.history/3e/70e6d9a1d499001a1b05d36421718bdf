@@ -1,0 +1,5 @@
+package com.DMAT.microservice.coursequestionservice.service;
+
+public class QuestionService {
+
+}

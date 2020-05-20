@@ -1,0 +1,46 @@
+package com.DMAT.microservice.coursequestionservice.modal;
+
+public class Question {
+	
+	private int qid;
+	private String question;
+	private int sectionId;
+
+	public Question() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Question(int qid, String question, int sectionId) {
+		super();
+		this.qid = qid;
+		this.question = question;
+		this.sectionId = sectionId;
+	}
+
+	public int getQid() {
+		return qid;
+	}
+
+	public void setQid(int qid) {
+		this.qid = qid;
+	}
+
+	public String getQuestion() {
+		return question;
+	}
+
+	public void setQuestion(String question) {
+		this.question = question;
+	}
+
+	public int getSectionId() {
+		return sectionId;
+	}
+
+	public void setSectionId(int sectionId) {
+		this.sectionId = sectionId;
+	}
+	
+	
+	
+}

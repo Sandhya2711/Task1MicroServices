@@ -1,0 +1,26 @@
+package com.DMAT.microservice.coursequestionservice.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.DMAT.microservice.coursequestionservice.modal.Question;
+
+@RestController
+public class QuestionController {
+
+	
+	@GetMapping("/question/{qid}")
+	public Question getQuestion(@PathVariable("qid") int qid){
+		
+		return null;
+	}
+	
+	@GetMapping("/question/section/{sectionId}")
+	public List<Question> getQuestionSectionWise(@PathVariable("sectionId") int sectionId){
+		
+		return null;
+	}
+}

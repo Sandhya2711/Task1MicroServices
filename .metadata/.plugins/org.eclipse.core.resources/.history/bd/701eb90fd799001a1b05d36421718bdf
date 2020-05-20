@@ -1,0 +1,35 @@
+package com.DMAT.microservice.coursequestionservice.service;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.DMAT.microservice.coursequestionservice.modal.Question;
+
+
+public class QuestionService {
+	
+	
+	List<Question> allQuestions;
+	
+	public QuestionService() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public List<Question> getAllQuestion() {
+		
+		// for demo using hard coded values,should be later fetched through database
+	    allQuestions=Arrays.asList(new Question(111,"question 1", 1),
+				new Question(112,"question 2", 1),
+				new Question(113,"question 3", 2),
+				new Question(114,"question 4", 1),
+				new Question(115,"question 5", 1),
+				new Question(116,"question 6", 3));
+		return allQuestions;
+	}
+	
+   public Question getQuestionById(int qid) {
+		
+	   Question ques= (Question) getAllQuestion().stream().filter(question->question.getQid()==qid);
+		return ques;
+	}
+}

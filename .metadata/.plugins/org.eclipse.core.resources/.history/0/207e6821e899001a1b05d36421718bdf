@@ -1,0 +1,29 @@
+package com.DMAT.microservice.mainservice.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.DMAT.microservice.mainservice.modal.Question;
+import com.DMAT.microservice.mainservice.modal.QuestionAnswer;
+
+
+@RestController
+@RequestMapping("/questionCatalog")
+public class MainController {
+
+	@RequestMapping("/")
+	public List<QuestionAnswer> getAllQuestions(){
+		
+	}
+	
+	@RequestMapping("/{sectionId}")
+	public List<QuestionAnswer> getQuestionsSectionWise(@PathVariable int sectionId){
+		
+	}
+	
+	
+}

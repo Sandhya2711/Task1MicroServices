@@ -1,0 +1,51 @@
+package com.DMAT.microservice.mainservice.modal;
+
+public class UserResult {
+
+	private String section;
+	private float current;
+
+	public UserResult(String process, float current, float actual) {
+		super();
+		this.section = process;
+		this.current = current;
+		this.actual = actual;
+	}
+
+	public String getProcess() {
+		return section;
+	}
+
+	public void setProcess(String process) {
+		this.section = process;
+	}
+
+	private float actual;
+
+	public UserResult() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public float getCurrent() {
+		return current;
+	}
+
+	public void setCurrent(float current) {
+		this.current = current;
+	}
+
+	public float getActual() {
+		return actual;
+	}
+
+	public void setActual(float actual) {
+		this.actual = actual;
+	}
+
+
+	@Override
+	public String toString() {
+		return "UserResult [current=" + current + ", actual=" + actual + "]";
+	}
+
+}

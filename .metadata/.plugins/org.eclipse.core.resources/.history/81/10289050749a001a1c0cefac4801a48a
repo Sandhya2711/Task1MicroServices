@@ -1,0 +1,22 @@
+package com.DMAT.microservice.mainservice.modal;
+
+import java.util.List;
+
+public class QuestionArray {
+
+	private List<Question> quesList;
+	public QuestionArray() {
+		// TODO Auto-generated constructor stub
+	}
+	public QuestionArray(List<Question> quesList) {
+		super();
+		this.quesList = quesList;
+	}
+	public List<Question> getQuesList() {
+		return quesList;
+	}
+	public void setQuesList(List<Question> quesList) {
+		this.quesList = quesList;
+	}
+	
+}

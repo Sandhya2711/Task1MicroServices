@@ -1,0 +1,5 @@
+package com.DMAT.microservice.mainservice.controller;
+
+public class MainController {
+
+}

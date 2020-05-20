@@ -1,0 +1,24 @@
+package com.DMAT.microservice.userassessmentservice.modal;
+
+import java.util.List;
+
+public class UserAnswerResponse {
+
+	private List<UserAnswer> userAnswers;
+	public UserAnswerResponse() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public UserAnswerResponse(List<UserAnswer> userAnswers) {
+		super();
+		this.userAnswers = userAnswers;
+	}
+
+	public List<UserAnswer> getUserAnswers() {
+		return userAnswers;
+	}
+
+	public void setUserAnswers(List<UserAnswer> userAnswers) {
+		this.userAnswers = userAnswers;
+	}
+}
